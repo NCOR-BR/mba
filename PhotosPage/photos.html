@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Mauricio B. Almeida, PhD – Universidade Federal de Minas Gerais
+    </title>
+    <meta
+      name="description"
+      content="Site oficial do Prof. Dr. Mauricio B. Almeida. Informações sobre ensino, projetos de pesquisa, publicações e cursos na área de Ciência da Informação e Ontologias."
+    />
+    <meta name="author" content="Mauricio B. Almeida" />
+    <meta
+      name="keywords"
+      content="Mauricio Almeida, UFMG, Ciência da Informação, Ontologia, BFO, Pesquisa"
+    />
+    <meta
+      property="og:title"
+      content="Mauricio B. Almeida, PhD – Ensino & Pesquisa"
+    />
+    <meta
+      property="og:description"
+      content="Conheça as atividades de ensino, pesquisa e publicações do Prof. Dr. Mauricio B. Almeida da UFMG."
+    />
+    <meta
+      property="og:image"
+      content="https://ncor-brasil.github.io/MBA/assets/faviconUFMG-8-300x300.png"
+    />
+    <meta property="og:url" content="https://ncor-brasil.github.io/MBA/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="https://ncor-brasil.github.io/MBA/assets/faviconUFMG-8-300x300.png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <div class="menu-mobile-header" onclick="toggleSidebar()">
+      <span class="material-symbols-outlined toggleButton"> menu </span>
+    </div>
+
+    <aside class="sidebar">
+      <div class="icons">
+        <span class="material-symbols-outlined" onclick="toggleSidebar()"
+          >close</span
+        >
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="../index.html">Informações</a></li>
+          <li><a href="../ProjectsPage/projects.html">Projetos</a></li>
+          <li>
+            <a href="../PublicationsPage/publications.html">Publicações</a>
+          </li>
+          <li><a href="../BooksPage/books.html">Livros</a></li>
+          <li><a href="../CoursesPage/courses.html">Cursos</a></li>
+          <li><a href="../PhotosPage/photos.html">Fotos</a></li>
+          <li><a href="../EthicsPage/ethics.html">Ética</a></li>
+          <li><a href="../EnglishPage/english.html">English</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="faixa-topo">
+        <h1>Mauricio B. Almeida</h1>
+      </div>
+
+      <div class="main-content__text">
+        <div class="projetos-container">
+          <div class="foto-section">
+            <p>
+              Fotos de <i>Buffalo, New York</i>, US, veja meu
+              <a href="#">Moleskine</a>
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/north-campus.jpg"
+                  alt="North Campus"
+                  class="zoom-img"
+                />
+                <p>North Campus</p>
+              </div>
+              <div class="foto-item">
+                <img
+                  src="../assets/state-university.jpg"
+                  alt="State University of New York"
+                  class="zoom-img"
+                />
+                <p>
+                  <a
+                    href="https://www.buffalo.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >State University of New York at Buffalo</a
+                  >
+                </p>
+              </div>
+              <div class="foto-item">
+                <img
+                  src="../assets/south-campus.jpg"
+                  alt="South Campus"
+                  class="zoom-img"
+                />
+                <p>South Campus</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Um
+              <a
+                href="https://www.rep.routledge.com/articles/thematic/continuants/v-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >continuante</a
+              >
+              mantêm a identidade ao longo do tempo à despeito das mudanças
+              qualitativas
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/prof2000.jpg"
+                  alt="Foto 1"
+                  class="zoom-img"
+                />
+                <p>2000</p>
+              </div>
+              <div class="foto-item">
+                <img
+                  src="../assets/prof2010.png"
+                  alt="Foto 2"
+                  class="zoom-img"
+                />
+                <p>2010</p>
+              </div>
+              <div class="foto-item">
+                <img
+                  src="../assets/prof2020.png"
+                  alt="Foto 3"
+                  class="zoom-img"
+                />
+                <p>2020</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Dr. Mauricio e Dr. Nicola Guarino (DOLCE Ontology)</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/mba_guarino.jpg"
+                  alt="MBA Guarino"
+                  class="zoom-img"
+                />
+                <p>Dr. Mauricio e Dr. Nicola Guarino</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Niagara Falls, 10 minutos da
+              <i>University at Buffalo, South Campus, US</i>
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/niagarafalls.jpg"
+                  alt="Foto Niagara Falls - University at Buffalo, South Campus, US"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Oxford University, UK</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/oxford.jpg"
+                  alt="Foto Oxford"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Dr. Mauricio e Dr. Barry Smith (<i>Basic Formal Ontology</i>)</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/mba_smith.jpg"
+                  alt="Foto Dr. Mauricio e Dr. Barry Smith (Basic Formal Ontology)"
+                  class="zoom-img"
+                />
+                <p>Dr. Mauricio e Dr. Barry Smith</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Dr. Mauricio e Dr. Lee Giles (<i>Citeseer</i>)</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/mba_leegiles.jpg"
+                  alt="Foto Dr. Mauricio e Dr. Lee Giles (Citeseer)"
+                  class="zoom-img"
+                />
+                <p>Dr. Mauricio e Dr. Lee Giles</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Comentário sobre artigo “<i
+                >Revisiting Ontologies: a Necessary Clarification</i
+              >” em blog científico chinês
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/comentario.jpg"
+                  alt="Foto Comentário sobre artigo 'Revisiting Ontologies: a Necessary Clarification' em blog científico chinês"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Palestra sobre interoperabilidade entre sistemas de informação
+              biomédicos em Portugal
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/palestraportugal.jpg"
+                  alt="Foto Palestra sobre interoperabilidade entre sistemas de informação biomédicos em Portugal"
+                  class="zoom-img"
+                />
+                <p>Palestra em Portugal</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Comentário artigo “<i>Revisting Ontological Foundations …</i>” no
+              blog da OpenEHR Foundation
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/comentario2.jpg"
+                  alt="Foto Comentário artigo 'Revisting Ontological Foundations …' no blog da OpenEHR Foundation"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Membro da
+              <i>Ontology, Logic & Technology Unit, University at Buffalo</i>
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/1-1.jpg"
+                  alt="Foto Membro da Ontology, Logic & Technology Unit, University at Buffalo"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Com Dr. Doug Oard da <i>University of Maryland, US</i></p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/2-1.jpg"
+                  alt="Foto com Dr. Doug Oard da University of Maryland, US"
+                  class="zoom-img"
+                />
+                <p>Dr. Mauricio e Dr. Doug Oard</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Com Dra. Beatriz Cendón em reunião com professores da
+              <i>School of Information Studies at Syracuse University, US</i>
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/1-2-768x516.jpg"
+                  alt="Foto com Dra. Beatriz Cendón em reunião com professores da School of Information Studies at Syracuse University, US"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Na <i>University of Florida com o Ontology Research Group</i></p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/universityflorida.jpg"
+                  alt="Foto na University of Florida com o Ontology Research Group"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Na <i>State University of Oregon</i></p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/DSC_01421-768x432.jpg"
+                  alt="Foto na State University of Oregon"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Com a Dra. Maria das Graças Simões, Universidade de Coimbra,
+              Portugal
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/MBA-MDG-768x543.png"
+                  alt="Foto com a Dra. Maria das Graças Simões, Universidade de Coimbra, Portugal"
+                  class="zoom-img"
+                />
+                <p>Dr. Mauricio e Dra. Maria das Graças Simões</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Na <i>University of Arkansas for Medical Science, US</i></p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/universityakansas.jpg"
+                  alt="Foto na University of Arkansas for Medical Science, US"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Com colegas do grupo
+              <a
+                href="https://recol.eci.ufmg.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >RECOL</a
+              >
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/photo_2021-05-11_20-34-55-768x432.jpg"
+                  alt="Foto com colegas do grupo RECOL"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Na Universidade Federal Fluminense, BR</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/Dia-1-70.jpg"
+                  alt="Foto na Universidade Federal Fluminense, BR"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>No QQML, <i>Florence, Italy </i></p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/Screenshot-2021-10-08-112203.png"
+                  alt="Foto no QQML, Florence, Italy"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>No ICBO, Brasília, Brasil</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/icbo.png"
+                  alt="Foto no ICBO, Brasília, Brasil"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>Relatório da OTAN citando publicação da qual participo</p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/natoMBA-1.png"
+                  alt="Foto do Relatório da OTAN citando publicação da qual participo"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Especialista convidado,
+              <a
+                href="https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1526821"
+                target="_blank"
+                rel="noopener noreferrer"
+                >programa EDUCA e-SUS APS</a
+              >
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/programaeduca.jpg"
+                  alt="Foto do programa EDUCA e-SUS APS"
+                  class="zoom-img"
+                />
+                <p>
+                  In: REIS, Z.S.N. (2024). <b>REGISTRO DE SAÚDE NA APS</b>:
+                  educação permanente para enfermeiros, médicos da equipe de
+                  saúde da família, cirurgiões-dentistas e equipes
+                  multiprofissionais. Disponível na Internet em:
+                  https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1526821
+                  Acesso em 07/02/2024
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Livros da Colecão Representação do Conhecimento em Ciência da
+              Informação na Biblioteca do IBTIC
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/livros.png"
+                  alt="Foto dos livros da Colecão Representação do Conhecimento em Ciência da Informação na Biblioteca do IBTIC"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="foto-divisor" />
+
+          <div class="foto-section">
+            <p>
+              Professor Residente do Instituto de Estudos Avançados
+              Interdisciplinares (IEAT) da UFMG
+            </p>
+
+            <div class="foto-grid">
+              <div class="foto-item">
+                <img
+                  src="../assets/drmauricio.png"
+                  alt="Foto do Professor Residente do Instituto de Estudos Avançados Interdisciplinares (IEAT) da UFMG"
+                  class="zoom-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="meuLightbox" class="lightbox" onclick="fecharLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="img-ampliada" />
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-left">
+          <h4>Copyright</h4>
+          <p>Mauricio B. Almeida 2006-2019</p>
+        </div>
+        <div class="footer-right">
+          <p>
+            Copyright &copy; 2026 Mauricio B. Almeida, PhD. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

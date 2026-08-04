@@ -1,0 +1,48 @@
+:root {
+  --verde-ufmg: #008000;
+  --cor-texto: #333333;
+}
+
+.filter-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--verde-ufmg);
+}
+
+#buscaPublicacao {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-filtro {
+  padding: 8px 16px;
+  border: 1px solid var(--verde-ufmg);
+  background-color: white;
+  color: var(--verde-ufmg);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-filtro:hover,
+.btn-filtro.ativo {
+  background-color: var(--verde-ufmg);
+  color: white;
+}
+
+.pub-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+}

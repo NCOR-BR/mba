@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Mauricio B. Almeida, PhD – Universidade Federal de Minas Gerais
+    </title>
+    <meta
+      name="description"
+      content="Site oficial do Prof. Dr. Mauricio B. Almeida. Informações sobre ensino, projetos de pesquisa, publicações e cursos na área de Ciência da Informação e Ontologias."
+    />
+    <meta name="author" content="Mauricio B. Almeida" />
+    <meta
+      name="keywords"
+      content="Mauricio Almeida, UFMG, Ciência da Informação, Ontologia, BFO, Pesquisa"
+    />
+    <meta
+      property="og:title"
+      content="Mauricio B. Almeida, PhD – Ensino & Pesquisa"
+    />
+    <meta
+      property="og:description"
+      content="Conheça as atividades de ensino, pesquisa e publicações do Prof. Dr. Mauricio B. Almeida da UFMG."
+    />
+    <meta
+      property="og:image"
+      content="https://ncor-brasil.github.io/MBA/assets/faviconUFMG-8-300x300.png"
+    />
+    <meta property="og:url" content="https://ncor-brasil.github.io/MBA/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="https://ncor-brasil.github.io/MBA/assets/faviconUFMG-8-300x300.png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <div class="menu-mobile-header" onclick="toggleSidebar()">
+      <span class="material-symbols-outlined toggleButton"> menu </span>
+    </div>
+
+    <aside class="sidebar">
+      <div class="icons">
+        <span class="material-symbols-outlined" onclick="toggleSidebar()"
+          >close</span
+        >
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="../index.html">Informações</a></li>
+          <li><a href="../ProjectsPage/projects.html">Projetos</a></li>
+          <li>
+            <a href="../PublicationsPage/publications.html">Publicações</a>
+          </li>
+          <li><a href="../BooksPage/books.html">Livros</a></li>
+          <li><a href="../CoursesPage/courses.html">Cursos</a></li>
+          <li><a href="../PhotosPage/photos.html">Fotos</a></li>
+          <li><a href="../EthicsPage/ethics.html">Ética</a></li>
+          <li><a href="../EnglishPage/english.html">English</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="faixa-topo">
+        <h1>Mauricio B. Almeida</h1>
+      </div>
+
+      <div class="main-content__text">
+        <div class="projetos-container">
+          <h2 class="projetos-titulo">Cursos</h2>
+
+          <div class="filter-section">
+            <input
+              type="text"
+              id="buscaCurso"
+              placeholder="Pesquisar por nome do curso..."
+              onkeyup="filtrarCursos()"
+            />
+
+            <div class="filter-buttons">
+              <button
+                class="btn-filtro ativo"
+                onclick="filtrarCategoriaCurso('todas', this)"
+              >
+                Todas
+              </button>
+              <button
+                class="btn-filtro"
+                onclick="filtrarCategoriaCurso('graduacao', this)"
+              >
+                Graduação
+              </button>
+              <button
+                class="btn-filtro"
+                onclick="filtrarCategoriaCurso('stricto', this)"
+              >
+                Stricto Sensu
+              </button>
+            </div>
+          </div>
+
+          <div class="lista-cursos" id="listaCursos">
+            <p class="noCourse" style="display: none">
+              Nenhuma publicação encontrada.
+            </p>
+
+            <div class="grupo-cursos">
+              <h2 class="projetos-titulo">Cursos de Graduação</h2>
+
+              <div class="curso-item" data-categoria="graduacao">
+                <h4 class="curso-titulo">Introdução as ontologias</h4>
+                <p>
+                  A disciplina tem como objetivo proporcionar a complementação
+                  do conhecimento na área de tecnologia da informação,
+                  possibilitando a atualização e o aprofundamento em temas
+                  relacionados a estruturas para organização do conhecimento.
+                  Fornece ao aluno as habilidades necessárias, do ponto de vista
+                  teórico e prático, para a construção de ontologias, artefatos
+                  utilizados para a organização e a recuperação da informação em
+                  diversos domínios do conhecimento.
+                </p>
+              </div>
+
+              <div class="curso-item" data-categoria="graduacao">
+                <h4 class="curso-titulo">Aplicações em ontologias</h4>
+                <p>
+                  A disciplina é uma continuação da disciplina “Introdução as
+                  ontologias” e, da mesma forma, objetiva complementar o
+                  conhecimento na área de tecnologia da informação, apresentado
+                  uma visão mais avançada sobre o uso e aplicação de ontologias.
+                  Fornece ao aluno as habilidades necessárias, do ponto de vista
+                  teórico e prático, para a construção de aplicações em
+                  ontologias em domínios diversos do conhecimento.
+                </p>
+                <p>Vídeo-resumo das unidades do curso:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1I2XO-KhI-1eNNrNaayCo9VcK-zxlqXeX/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade I</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1R234yNIJJVQcRAZ-57BpNdy-wFK0B_dD/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade II</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1IepR2uzoanwLTlS5-j0baQgVnfiKr_Wv/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade IIIa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1FqLlEcD1Rz30pxPdDClGiB7krc5WUU1_/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade IIIb</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1Q69M2zkXVUVk6Epb0eSLuhhBExUzUki8/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade IV</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/17GtShCUNMGe4gvBWagbOq7s1g5Fpt4jP/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade V</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1LBuc-0YClotqWKxqajE6X0tTH60ZS9qW/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade VI</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="curso-item" data-categoria="graduacao">
+                <h4 class="curso-titulo">
+                  Sistemas de Recuperação da Informação
+                </h4>
+                <p>
+                  A disciplina tem como objetivo proporcionar formação em
+                  tecnologia da informação voltada para a Ciência da Informação,
+                  possibilitando a atualização e o aprofundamento em recuperação
+                  da informação. Fornece ao aluno as habilidades necessárias, do
+                  ponto de vista teórico e prático, para a refletir criticameete
+                  sobre as possibilidades de recuperação da informação em
+                  repositórios de dados disponíveis na Web. Eventualmente,
+                  diferentes softwares de utilidade ao aluno são apresentados e
+                  utlizados na parte prática.
+                </p>
+                <p>Vídeo-resumo das unidades do curso:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/13iaSYNoyiNQRM-RNp1efzRwmF81jQfpG/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade I</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1Z65FDKPC-4TRuJvUPzaXjmEQeZyJIvyn/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade II</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/18Qm1KwF5_xaqNIYKC1i3mBUwI1G2NuVR/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade III</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1eOYv1sP9RuEs7PF0Rrmmm-LIg-zpYgVO/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade IV</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1LUcwSkXgjSEL31ZwK7NkHjimvf84N1su/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade V</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1Li6t4WRsnA1XSl-Z8IS5iSN32bap2wkP/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Visão geral da Unidade VI</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grupo-cursos">
+              <h2 class="projetos-titulo">Cursos Stricto Sensu</h2>
+
+              <div class="curso-item" data-categoria="stricto">
+                <h4 class="curso-titulo">
+                  Ontologia Aplicada (Representação Ontológica em Sistemas
+                  Formais)
+                </h4>
+                <p>
+                  Ao fim do curso, o candidato a doutor deve ser capaz de: ter
+                  visão abrangente da pesquisa de ontologias e dos objetivos
+                  envolvidos, entender as diversas interpretações para o termo
+                  “ontologia”, entender a relação entre teorias concorrentes e
+                  complementares nos campos envolvidos, conhecer os fundamentos
+                  ontológicos básicos para organização e representação do
+                  conhecimento, compreender o potencial de pesquisa, tendências
+                  e importância, bem como aplicar.
+                </p>
+              </div>
+
+              <div class="curso-item" data-categoria="stricto">
+                <h4 class="curso-titulo">Estudos Avançados em Informação</h4>
+                <p>
+                  Ao fim do curso, o candidato a doutor deve ser capaz de
+                  discutir e propor um seminário nos seguintes temas: a
+                  possibilidade da informação e do conhecimento, o mapa da
+                  informação e o mapa das representações, princípios ontológicos
+                  para a organização da informação. A ontologia do social:
+                  intencionalidade, entidades sociais, direitos e obrigações,
+                  atos da fala, atos dos documentos, agentes, instituições e
+                  fatos institucionais, ontologia especializadas.
+                </p>
+              </div>
+
+              <div class="curso-item" data-categoria="stricto">
+                <h4 class="curso-titulo">Seminário de Pesquisa</h4>
+                <p>
+                  Oferecer ao aluno indicações sobre aspectos relevantes para a
+                  consecução da pós graduação como apoio a orientação e ao plano
+                  de trabalho. Ao fim do curso, o candidato a doutor deve ser
+                  capaz de: entender o processo da pós graduação, a evolução do
+                  seu trabalho, ter noções sólidas de pesquisa e de ciência,
+                  conhecer técnicas para ler, estudar e escrever melhor, ser
+                  capaz de realizar revisão sistemática, conhecer alternativas
+                  de metodologia de pesquisa, conhecer a estrutura de trabalhos
+                  científicos, entender o processo de submissão de artigos e
+                  como publicar em revistas internacionais, ter noções sobre os
+                  critérios de avaliação de artigos e plágio, além de
+                  peculiaridades da pesquisa em Ciências Sociais Aplicadas.
+                </p>
+              </div>
+
+              <div class="curso-item" data-categoria="stricto">
+                <h4 class="curso-titulo">
+                  Utilidades para candidatos a doutor
+                </h4>
+                <p>a) Durante e depois do doutorado:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/downloads/fulltext%5B1%5D.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >For the Student, A PhD Thesis without Tears</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.com/PhD-Is-Not-Enough-Survival/dp/0465022227"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Depois do PhD</a
+                    >
+                    (para recém-doutores)
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.science.org/content/article/how-seriously-read-scientific-paper"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >How to (seriously) read a scientific paper</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.science.org/content/article/how-keep-scientific-literature-rev2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >How to keep up with the scientific literature</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://superscholar.org/comp-history-philosophy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Infográfico: história do saber</a
+                    >
+                  </li>
+                </ul>
+
+                <p>b) Para submeter artigos de qualidade:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.webcitation.org/5OIehhwuI"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >How to Submit a Paper to a Scientific Journal?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/downloads/Brochure_UPP_April2015.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >How to Publish in Scholarly Journals</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://informationr.net/ir/eval.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >O que um avaliador busca no seu artigo?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1005619"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Ten simple rules for structuring papers</a
+                    >
+                    (gentileza
+                    <a
+                      href="https://mba.eci.ufmg.br/alunos/mestr-dout/erfelipe@hotmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >prof. Eduardo Felipe</a
+                    >)
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/wp-content/uploads/Como-publicar-seu-artigo-de-pesquisa_Tradu%C3%A7%C3%A3o_Playlist-da-Wiley_Youtube_JeanneLouizeEmygdio_29072019.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Como publicar seu artigo de pesquisa</a
+                    >
+                    (gentileza
+                    <a
+                      href="https://mba.eci.ufmg.br/alunos/mestr-dout/jeanne.emygdio@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >profa. Jeanne Louize</a
+                    >)
+                  </li>
+                </ul>
+
+                <p>c) Ética em pesquisa:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.webcitation.org/5OJfsesVd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Sobre plágio</a
+                    >
+                  </li>
+                  <li>
+                    É preciso citar <b>qualquer</b> ideia de outro autor, como
+                    sugere o
+                    <a
+                      href="https://mba.eci.ufmg.br/wp-content/uploads/2015/12/mla_examples.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Columbia College (Missouri)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/downloads/RigIintPes-AcBrCiencias.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Rigor e Integridade na Condução da Pesquisa Científica</a
+                    >
+                    (Academia Brasileira de Ciências)
+                  </li>
+                </ul>
+
+                <p>d) Metodologia e escrita de tese e dissertação:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/downloads/LerEstEsc.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Leitura, estudo e escrita</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/downloads/metodologia.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Noções básicas de metodologia de pesquisa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/downloads/checklist.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Aspectos chave para a pesquisa social (check list)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://normalizacao.eci.ufmg.br/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Manual de Normalização</a
+                    >
+                    (gentileza
+                    <a
+                      href="https://mba.eci.ufmg.br/alunos/mestr-dout/benildes@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >profa. Benildes Maculan</a
+                    >)
+                  </li>
+                  <li>
+                    Revisão sistemática de literatura:
+                    <ul
+                      style="
+                        list-style-type: circle;
+                        margin-left: 20px;
+                        margin-top: 1rem;
+                      "
+                    >
+                      <li>
+                        <a
+                          href="https://mba.eci.ufmg.br/wp-content/uploads/0000605-200908180-00008.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Metodologia PRISMA para revisão sistemática</a
+                        >
+                        e
+                        <a
+                          href="https://mba.eci.ufmg.br/wp-content/uploads/ISSM_PRISMA_Checklist.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >check-list PRISMA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://lapes.dc.ufscar.br/tools/start_tool"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Ferramenta para revisão sistemática de literatura</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mba.eci.ufmg.br/wp-content/uploads/8.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Apresentação do prof. Marco Mendes</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mba.eci.ufmg.br/wp-content/uploads/RS_Protocolo_Methodologies_FF_V10.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Exemplo de protocolo para revisão, profa. Fernanda
+                          Farinelli</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mba.eci.ufmg.br/wp-content/uploads/protocolo-CPP-v3-withoutapp.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Exemplo de protocolo para revisão, prof. Cristiano
+                          Pessanha</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <p>e) Entrega de textos oficiais:</p>
+                <ul>
+                  <li>
+                    Faça o
+                    <a
+                      href="https://mba.eci.ufmg.br/wp-content/uploads/Check-1.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >check-list básico</a
+                    >
+                    antes de enviar sua qualificação, dissertação ou tese para o
+                    orientador
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.zotero.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Zotero</a
+                    >, gerenciador de referências e
+                    <a
+                      href="https://mba.eci.ufmg.br/wp-content/uploads/Manual_Zotero.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >manual básico (PT)</a
+                    >
+                  </li>
+                </ul>
+
+                <p>f) Revisão de textos em inglês:</p>
+                <ul>
+                  <li>
+                    Profreading Kochiras:
+                    <a
+                      href="http://publishdontperish.eu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >publishdontperish.eu</a
+                    >
+                  </li>
+                </ul>
+
+                <p>g) Argumentação e falácias:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.amazon.com/Believing-Bullshit-Sucked-Intellectual-Black/dp/1616144114/ref=sr_1_1?keywords=stephen+law&qid=1582046649&sr=8-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Law, S. Believing Bullshit: How Not to Get Sucked into an
+                      Intellectual Black Hole. Amherst: Prometheus, 2011</a
+                    >
+                  </li>
+                </ul>
+
+                <p>h) Ferramentas:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/wp-content/uploads/GITHUB_Instala%C3%A7%C3%A3o-e-Configura%C3%A7%C3%A3o-V1JLE-R3MBA.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Manual básico do GitHub</a
+                    >
+                    (gentileza
+                    <a
+                      href="https://mba.eci.ufmg.br/alunos/mestr-dout/jeanne.emygdio@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >profa. Jeanne L. Emygdio</a
+                    >)
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/onto_frames/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Tutorial Protege Frames</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://mba.eci.ufmg.br/onto_owl/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Tutorial Protege OWL</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-left">
+          <h4>Copyright</h4>
+          <p>Mauricio B. Almeida 2006-2019</p>
+        </div>
+        <div class="footer-right">
+          <p>
+            Copyright &copy; 2026 Mauricio B. Almeida, PhD. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

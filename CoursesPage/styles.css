@@ -1,0 +1,51 @@
+:root {
+  --verde-ufmg: #008000;
+  --cor-texto: #333333;
+}
+
+.filter-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--verde-ufmg);
+}
+#buscaCurso {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btn-filtro {
+  padding: 8px 16px;
+  border: 1px solid var(--verde-ufmg);
+  background-color: white;
+  color: var(--verde-ufmg);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.btn-filtro:hover,
+.btn-filtro.ativo {
+  background-color: var(--verde-ufmg);
+  color: white;
+}
+.curso-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.curso-item:last-child {
+  padding-bottom: 0;
+}
+.curso-titulo {
+  color: var(--verde-ufmg);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
