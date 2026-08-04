@@ -1,0 +1,140 @@
+:root {
+  --verde-ufmg: #008000;
+  --cor-texto: #333333;
+}
+
+.main-content > img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.livro-item {
+  display: flex;
+  gap: 25px;
+  padding: 30px 0;
+  border-bottom: 1px solid #eeeeee;
+  align-items: flex-start;
+}
+.livro-item:last-child {
+  border-bottom: none;
+}
+.livro-item img {
+  width: 130px;
+  height: auto;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.livro-info {
+  flex: 1;
+}
+.livro-info p {
+  font-size: 1rem;
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.livro-info a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+.livro-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#livro-capa {
+  max-width: 200px;
+  height: auto;
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.livro-info-container {
+  flex: 1;
+}
+#livro-titulo {
+  color: var(--cor-texto);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.livro-botoes-compra {
+  display: flex;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+.livro-botoes-compra a {
+  color: var(--verde-ufmg);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid var(--verde-ufmg);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.livro-botoes-compra a:hover {
+  background-color: var(--verde-ufmg);
+  color: white;
+}
+.livro-botoes-compra::after {
+  content: none;
+}
+#livro-descricao {
+  text-align: justify;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+#livro-prefacio-container {
+  text-align: center;
+  margin-bottom: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+#livro-prefacio-autor {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#livro-prefacio-imagem {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.prefacio-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.prefacio-galeria img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .livro-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .livro-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  #livro-titulo {
+    text-align: center;
+  }
+  .livro-botoes-compra {
+    justify-content: center;
+  }
+}
