@@ -1,0 +1,89 @@
+:root {color-scheme:light;--dark:#102c30;--teal:#075950;--mint:#a9d9ce;--paper:#f3f5f4;--ink:#192c35;--line:#d6e0dd}
+* {box-sizing:border-box}
+body {margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+.wrap {width:min(1080px,calc(100% - 3rem));margin-inline:auto}
+.site-header {background:var(--dark);color:#f7fbfa}
+.top {border-bottom:1px solid #3c5a5c;padding:.85rem 0}
+.top .wrap {display:flex;justify-content:space-between;flex-wrap:wrap;gap:.25rem 1rem}
+.top strong,.eyebrow {font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+.top span,.hero p {color:#b8d4d2}
+.hero {padding:2.8rem 0 2.5rem}
+.eyebrow {color:var(--mint);font-size:.85rem}
+h1 {font-size:clamp(2.5rem,6.5vw,4.6rem);letter-spacing:-.045em;line-height:1.04;margin:.6rem 0 .75rem}
+.hero p {margin:0;font-size:1.08rem}
+.site-nav ul {list-style:none;padding: .75rem 0;margin:0;display:flex;flex-wrap:wrap;gap:.4rem;border-bottom:1px solid var(--line)}
+.site-nav a {display:block;background:#fff;border:1px solid var(--line);border-radius:.45rem;padding:.4rem .8rem;text-decoration:none;font-weight:700;color:var(--ink)}
+.site-nav a[aria-current],.site-nav a:hover {background:var(--teal);color:white;border-color:var(--teal)}
+.site-layout .main-content {padding:1.6rem 0 2.75rem}
+section {padding:1.35rem 0;border-bottom:1px solid var(--line)}
+section:first-child {padding-top:0}
+h2 {font-size:clamp(1.5rem,4vw,1.9rem);line-height:1.25;margin:0 0 1rem;letter-spacing:-.025em}
+h3 {margin:.5rem 0}
+p,li {overflow-wrap:anywhere}
+section p,section ul,section ol {max-width:84ch}
+.home-intro + h3 + p {background:#e6efed;border-left:3px solid #548f82;padding:.65rem .9rem}
+a {color:var(--teal);text-underline-offset:.17em}
+a:focus-visible {outline:3px solid #388b7b;outline-offset:3px}
+section li+li {margin-top:.3rem}
+img {max-width:100%;height:auto}
+div[class^="books"] {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr));gap:.8rem}
+div[class^="books"]>div {border:1px solid var(--line);border-radius:.6rem;background:white;text-align:center;padding:.8rem}
+div[class^="books"] img {height:180px;width:100%;object-fit:contain}
+div[class^="books"] p {margin:.5rem 0 0}
+.site-layout .site-footer {border-top:1px solid var(--line);padding:1.2rem 0;color:#4f6268;font-size:.875rem}
+.site-layout .site-footer p,.site-layout .site-footer h4 {margin:.2rem 0}
+@media(max-width:520px) {.wrap {width:calc(100% - 2rem)}.hero {padding:2rem 0}}
+
+.site-layout {
+  --verde-ufmg: var(--teal);
+  --cor-texto: var(--ink);
+}
+.site-layout .main-content {
+  width: min(1080px, calc(100% - 3rem));
+  margin-inline: auto;
+  min-width: 0;
+}
+.site-layout .main-content__text {
+  padding: 0;
+  font: inherit;
+  overflow-wrap: anywhere;
+}
+.site-layout .main-content__text > :is(.projetos-container, .livros-container) {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+.site-layout .main-content__text h2 {color: var(--ink)}
+.site-layout .main-content__text p {text-align: start}
+.site-layout .main-content__text a {color: var(--teal); text-decoration: underline}
+.site-layout .main-content__text a:visited {color: #344e57}
+.site-layout .site-footer {
+  background: transparent;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+.site-layout .site-footer p {color: inherit}
+.site-layout .footer-left h4 {border: 0; padding: 0; font-size: inherit; font-weight: 700}
+.site-layout .main-content__text .btn-filtro {
+  background: white;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.site-layout .main-content__text .btn-filtro:is(.ativo, :hover) {
+  background: var(--teal);
+  color: white;
+  border-color: var(--teal);
+}
+.site-layout :is(button, input):focus-visible {outline: 3px solid #388b7b; outline-offset: 3px}
+.site-layout :is(#buscaCurso, #buscaPublicacao) {max-width: 100%}
+.site-layout .livro-info {min-width: 0}
+.site-layout .foto-grid {grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr))}
+.site-layout div[class^="books"] > div {width: auto}
+.site-layout .cover-placeholder {aspect-ratio: auto; height: 180px; margin: 0; box-shadow: none}
+.site-layout .cover-placeholder span {font-family: inherit}
+
+@media (max-width: 520px) {
+  .site-layout .main-content {width: calc(100% - 2rem)}
+  .site-layout .livro-item {flex-wrap: wrap}
+}
